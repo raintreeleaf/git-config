@@ -1,3 +1,7 @@
+"Added two line on the top as advised by documentation
+"so that defaults.vim can load. (linux)
+unlet! skip_defaults_vim
+        source $VIMRUNTIME/defaults.vim
 
 "My custom settings=====================
 let mapleader = "-"
