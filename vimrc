@@ -22,11 +22,13 @@ vnoremap <leader>q <esc>`<i"<esc>`>la"
 
 "wrap highlighted word in {% %} django
 vnoremap <leader>g <esc>`<i {% <esc>`>lllla %}<esc>
-
+"Uppercase for word
+"
 "set number for python files
 augroup filetype_python
 	autocmd!
 	autocmd FileType python setlocal number
+	autocmd FileType python nnoremap <buffer> <leader>c 0i#<esc> 
 augroup END
 
 "=======================================
