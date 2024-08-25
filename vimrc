@@ -8,6 +8,7 @@ let mapleader = "-"
 
 set ignorecase
 set smartcase
+set hlsearch
 
 "open up myvimrc for quick editing
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
@@ -31,4 +32,6 @@ augroup filetype_python
 	autocmd FileType python nnoremap <buffer> <leader>c 0i#<esc> 
 augroup END
 
+"turn statusline back on. Don't know why it disappeared
+:set laststatus=2
 "=======================================
