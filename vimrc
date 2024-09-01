@@ -25,13 +25,21 @@ vnoremap <leader>q <esc>`<i"<esc>`>la"
 vnoremap <leader>g <esc>`<i {% <esc>`>lllla %}<esc>
 "Uppercase for word
 "
-"set number for python files
+"Use za to unfold
+"Python file settings{{{
 augroup filetype_python
 	autocmd!
+"set number for python files
 	autocmd FileType python setlocal number
 	autocmd FileType python nnoremap <buffer> <leader>c 0i#<esc> 
 augroup END
-
+"}}}
+" Vimscript file settings{{{
+augroup filetype_vim
+autocmd!
+autocmd FileType vim setlocal foldmethod=marker
+augroup END
+" }}}
 "turn statusline back on. Don't know why it disappeared
 :set laststatus=2
 "=======================================
