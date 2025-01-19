@@ -1,5 +1,7 @@
 "Added two line on the top as advised by documentation
 "so that defaults.vim can load. (linux)
+"use command :scriptnames to check order
+"put script in after folder to load last
 unlet! skip_defaults_vim
         source $VIMRUNTIME/defaults.vim
 
