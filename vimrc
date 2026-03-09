@@ -1,3 +1,10 @@
+"tips==================================
+""""""""""""""""""""""
+"vim search will search case insensitive
+"if the search term does not contain
+"any caps
+""""""""""""""""""""""
+"======================================
 "Added two line on the top as advised by documentation
 "so that defaults.vim can load. (linux)
 "use command :scriptnames to check order
