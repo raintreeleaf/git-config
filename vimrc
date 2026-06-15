@@ -1,9 +1,15 @@
 "tips==================================
 """"""""""""""""""""""
-"vim search will search case insensitive
+"Vim search will search case insensitive
 "if the search term does not contain
-"any caps
+"any caps.
 """"""""""""""""""""""
+"The normal! command does not recognise
+"\n, \r or <cr> etc. So use execute and
+"and pass command as a string. But
+"execute also does not recognise <cr>.
+"Mapping commands like nnoremap recognise
+"<cr>
 "======================================
 "Added two line on the top as advised by documentation
 "so that defaults.vim can load. (linux)
