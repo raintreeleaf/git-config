@@ -1,5 +1,11 @@
 "tips==================================
 """"""""""""""""""""""
+"if your cursor is in the middle of a
+"block, like (), {}, etc
+"use [(, [{ to find starting block, or
+"]) ]), ]} for ending block. Or
+"use % when your cursor is directly on the parenthesis
+""""""""""""""""""""""
 "Vim search will search case insensitive
 "if the search term does not contain
 "any caps.
